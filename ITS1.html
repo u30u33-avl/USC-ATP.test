@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ATP Testing</title>
+        <link rel="stylesheet" href="styles01.css">
+        
+    
+        <!-- UniIcon CDN Link  -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+
+        <style>
+            /* Styling for the modal */
+        
+            .modal {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,0.7);
+            }
+            /* Styling for the modal content */
+            .modal-content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: white;
+                padding: 20px;
+                text-align: center;
+            }
+            .centered-image
+             {
+            display: block;
+            margin: 0 auto;
+            
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+         a {
+            text-decoration: none;
+            color: #086bc1;
+        }
+        
+        </style>
+
+
+    </head>
+    <body>
+        
+        <div class="main">
+    
+            <div class="head">
+                <p style="color: rgb(8, 15, 10); font-size: 30px;"class="head_1">Inverter Testsystem Supply </p>
+               
+            </div>
+    
+            <ul>
+                <li>
+                    <i class="icon uil uil-caret-right"></i>
+                    <div class="progress one">
+                        <p>1</p>
+                        <i class="uil uil-check"></i>
+                    </div>
+                    <p style="color: blue; font-size: 18px;" id="popupTrigger"> Start ATP </p>
+                </li>
+
+                
+
+
+                <!-- Trigger the modal by clicking on this text -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span id="popupClose" style="float: right; cursor: pointer;">&times;</span>
+        <h2>Start ATP</h2>
+
+        <p><a href="./Documents.html">Access</a></p>
+            <p><a href= "documents.html#targetWord">Request tools</a></p>
+            <!--<label for="failure">Type of failure :</label>
+    
+                    <select id="failure" name="failure">
+                        <option value="ATP failure">ATP failure</option>
+                        <option value="Production failure">Production failure</option>
+                        <option value="OTHER">Other</option>
+                    </select>
+            
+        <p>further info</p>
+        <button id="optionButton">Option 1</button>
+        <button id="optionButton2">Option 2</button>-->
+    </div>
+</div>
+
+
+<script>
+    // Get the modal and the trigger element
+    var modal = document.getElementById("myModal");
+    var trigger = document.getElementById("popupTrigger");
+
+    // Get the close button and option buttons
+    var closeButton = document.getElementById("popupClose");
+    var optionButton = document.getElementById("optionButton");
+    var optionButton2 = document.getElementById("optionButton2");
+
+    // When the user clicks the trigger text, open the modal
+    trigger.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks the close button, close the modal
+    closeButton.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks optionButton
+    optionButton.onclick = function() {
+        alert("Option 1 clicked!");
+    }
+
+    // When the user clicks optionButton2
+    optionButton2.onclick = function() {
+        alert("Option 2 clicked!");
+    }
+
+    // Close the modal if the user clicks outside of it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+
+
+
+            <!-- ... (previous code) ... -->
+
+<li>
+    <i class="icon uil uil-bright"></i>
+    <div class="progress two">
+        <p>2</p>
+        <i class="uil uil-check"></i>
+    </div>
+    <p style="color: blue; font-size: 18px;" id="popupTrigger2">Troubleshooting</p>
+</li>
+
+<!-- The Modal for Step 2 (Troubleshooting) -->
+<div id="myModal2" class="modal">
+    <div class="modal-content">
+        <span id="popupClose2" style="float: right; cursor: pointer;">&times;</span>
+        <h2>Troubleshooting</h2>
+        
+        <p><a href="Documents.html">Document</a></p>
+        <!--<p>Further info.</p>
+        <button id="optionButton2_2">Option 1</button>
+        <button id="optionButton2_3">Option 2</button>-->
+    </div>
+</div>
+
+<!-- ... (continue with other steps) ... -->
+
+<script>
+    // JavaScript code for Step 2's popup
+    var modal2 = document.getElementById("myModal2");
+    var trigger2 = document.getElementById("popupTrigger2");
+    var closeButton2 = document.getElementById("popupClose2");
+    var optionButton2_2 = document.getElementById("optionButton2_2");
+    var optionButton2_3 = document.getElementById("optionButton2_3");
+
+    // Attach click event listeners for Step 2
+    trigger2.onclick = function() {
+        modal2.style.display = "block";
+    }
+
+    closeButton2.onclick = function() {
+        modal2.style.display = "none";
+    }
+
+    optionButton2_2.onclick = function() {
+        alert("Option 1 clicked for Step 2 (Troubleshooting)!");
+    }
+
+    optionButton2_3.onclick = function() {
+        alert("Option 2 clicked for Step 2 (Troubleshooting)!");
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal2) {
+            modal2.style.display = "none";
+        }
+    }
+
+    // Repeat similar JavaScript code for other steps as needed
+</script>
+
+<!-- ... (continue with other steps) ... -->
+
+
+
+
+
+<!-- ... (previous code) ... -->
+
+<li>
+    <i class="icon uil uil-clipboard-notes"></i>
+    <div class="progress two">
+        <p>3</p>
+        <i class="uil uil-check"></i>
+    </div>
+    <p style="color: blue; font-size: 18px;" id="popupTrigger3">ATP is finished</p>
+</li>
+
+<!-- The Modal for Step 3 (ATP is finished) -->
+<div id="myModal3" class="modal">
+    <div class="modal-content">
+        <span id="popupClose3" style="float: right; cursor: pointer;">&times;</span>
+        <h2>ATP is finished</h2>
+        <p><a href="https://dewansw1012.avl01.avlcorp.lan/RPSNext/app/SP/html5.dashboard"target="_blank">Record hours-RPS:</a>
+        <a href="Dokumentation_manuell_Zeiterfassung_manuelle_Lagerzugangsbuchung.docx" target="_blank">Guidelines</a></p>   
+        <p>Close the production task </p>
+        <p>Collect all the tools 
+            clean up the commissioning area
+            bring back the box</p>
+        <!--<p><a href="Documents.html">store</a></p>
+        <p><a href="Documents.html">update</a></p>
+        <p>Further info.</p>
+        <button id="optionButton3_2">Option 1</button>
+        <button id="optionButton3_3">Option 2</button>-->
+    </div>
+</div>
+
+<!-- ... (continue with other steps) ... -->
+
+<script>
+    // JavaScript code for Step 3's popup
+    var modal3 = document.getElementById("myModal3");
+    var trigger3 = document.getElementById("popupTrigger3");
+    var closeButton3 = document.getElementById("popupClose3");
+    var optionButton3_2 = document.getElementById("optionButton3_2");
+    var optionButton3_3 = document.getElementById("optionButton3_3");
+
+    // Attach click event listeners for Step 3
+    trigger3.onclick = function() {
+        modal3.style.display = "block";
+    }
+
+    closeButton3.onclick = function() {
+        modal3.style.display = "none";
+    }
+
+    optionButton3_2.onclick = function() {
+        alert("Option 1 clicked for Step 3 (ATP is finished)!");
+    }
+
+    optionButton3_3.onclick = function() {
+        alert("Option 2 clicked for Step 3 (ATP is finished)!");
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal3) {
+            modal3.style.display = "none";
+        }
+    }
+
+    // Repeat similar JavaScript code for other steps as needed
+</script>
+
+
+
+<!-- ... (continue with other steps) ... -->
+
+
+            
+<li>
+    <i class="icon uil uil-bolt"></i>
+    <div class="progress four">
+        <p>4</p>
+        <i class="uil uil-check"></i>
+    </div>
+    <p style="color: blue; font-size: 18px;" id="popupTrigger4">Back-up files</p>
+</li>
+
+<!-- The Modal for Step 4 (Order in Progress) -->
+<div id="myModal4" class="modal">
+    <div class="modal-content">
+        <span id="popupClose4" style="float: right; cursor: pointer;">&times;</span>
+        <h2>Back-up files</h2>
+        <p><a href="Lorem_ipsum.pdf.pdf">Guidelines</a></p>
+        <p>Create a new folder and copy all the back up files ( Gain calibration document,  Finished ATR, Files from File zilla)  </p>
+        <a href="https://dewansw1012.avl01.avlcorp.lan/RPSNext/app/SP/manufacturing.manufacturingorder">Uplaod ATR</a>
+        <!--<p>Further info.</p>
+        <button id="optionButton4_1">Option 1</button>
+        <button id="optionButton4_2">Option 2</button>-->
+    </div>
+</div>
+<script>
+    // JavaScript code for Step 4's popup
+var modal4 = document.getElementById("myModal4");
+var trigger4 = document.getElementById("popupTrigger4");
+var closeButton4 = document.getElementById("popupClose4");
+var optionButton4_1 = document.getElementById("optionButton4_1");
+var optionButton4_2 = document.getElementById("optionButton4_2");
+
+// Attach click event listeners for Step 4
+trigger4.onclick = function() {
+    modal4.style.display = "block";
+}
+
+closeButton4.onclick = function() {
+    modal4.style.display = "none";
+}
+
+optionButton4_1.onclick = function() {
+    alert("Option 1 clicked for Step 4 ");
+}
+
+optionButton4_2.onclick = function() {
+    alert("Option 2 clicked for Step 4 ");
+}
+
+window.onclick = function(event) {
+    if (event.target == modal4) {
+        modal4.style.display = "none";
+    }
+}
+
+</script>
+<li>
+    <i class="icon uil uil-book-reader"></i>
+    <div class="progress five">
+        <p>5</p>
+        <i class="uil uil-check"></i>
+    </div>
+    <p style="color: blue; font-size: 18px;" id="popupTrigger5"> Post Processing</p>
+    
+</li>
+
+<!-- The Modal for Step 5 (Order Arrived) -->
+<div id="myModal5" class="modal">
+    <div class="modal-content">
+        <span id="popupClose5" style="float: right; cursor: pointer;">&times;</span>
+        <h2>Post Processing</h2> 
+        <p><a href="mailto:Robert.Graf@avl.com"target="_blank">Report manufactury failures</a></p>
+        <p><a href="mailto:Philipp.Dorbath@avl.com"target="_blank">Report ATP document error</a><p></p>
+        <p><a href="https://jira.avl.com/its/secure/WelcomeToJIRA.jspa" target="_blank">Create a jira ticket</a></p>
+        <p><a href="mailto:Philipp.Dorbath@avl.com"target="_blank">Share knowledge with team</a><p></p>
+        <p>Share knowledge to on-site team</p>
+       <!-- <button id="optionButton5_1">Option 1</button>
+        <button id="optionButton5_2">Option 2</button> -->
+    </div>
+</div>
+<script>
+// JavaScript code for Step 5's popup
+var modal5 = document.getElementById("myModal5");
+var trigger5 = document.getElementById("popupTrigger5");
+var closeButton5 = document.getElementById("popupClose5");
+var optionButton5_1 = document.getElementById("optionButton5_1");
+var optionButton5_2 = document.getElementById("optionButton5_2");
+
+// Attach click event listeners for Step 5
+trigger5.onclick = function() {
+    modal5.style.display = "block";
+}
+
+closeButton5.onclick = function() {
+    modal5.style.display = "none";
+}
+
+optionButton5_1.onclick = function() {
+    alert("Option 1 clicked for Step 5 ");
+}
+
+optionButton5_2.onclick = function() {
+    alert("Option 2 clicked for Step 5 ");
+}
+
+window.onclick = function(event) {
+    if (event.target == modal5) {
+        modal5.style.display = "none";
+    }
+}
+
+</script>
+            </ul>
+            
+    
+        </div>
+    
+        <script src="main.js"></script>
+
+
+</head>
+<a href="#" class="back-button">
+    <button onclick="goBack()"> Back</button></a>
+
+    
+<script>
+    function goBack() {
+        window.history.back();
+    }
+    </script>
+</body>
+</html>
+
+    
+    
+    
+    
+    
+    
