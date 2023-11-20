@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            background-color: #f0f0f0; /* Background color */
+        }
+
+        .hex-container {
+            width: 150%; /* Adjust the size of the hexagonal container */
+            max-width: 1000px; /* Maximum width to maintain aspect ratio */
+            height: 99%; /* Maintain the same aspect ratio */
+            position: relative;
+        }
+
+        .hexagon {
+            width: 240px;
+            height: 260px; /* Approximate height for a regular hexagon */
+            background: linear-gradient(145deg, #ffffff 15%, #f3f37a 25%); /* Glossy gradient background */
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            position: absolute;
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5); /* Added shadow for a professional look */
+            text-align: center; /* Center text horizontally */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center text vertically */
+            padding: 20px; /* Add some padding to the hexagon */
+            
+        }
+
+        .hex-container .hexagon:nth-child(1) {
+            top: 68%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Center the hexagon */
+            
+        }
+
+        .hex-container .hexagon:nth-child(2) {
+            top: 30%;
+            left: 65%;
+            background: linear-gradient(145deg, #ffffff 15%, #94fac5  25%); /* Glossy gradient background */
+            transform: translate(-50%, -50%); /* Center the hexagon */
+        }
+
+        .hex-container .hexagon:nth-child(3) {
+            top: 30%;
+            left: 35%;
+            background: linear-gradient(145deg, #ffffff 15%, #f1a2f1 25%); /* Glossy gradient background */
+            transform: translate(-50%, -50%); /* Center the hexagon */
+        }
+
+        
+
+        .section-header {
+            font-size: 18px; /* Adjust font size */
+            margin-bottom: 10px; /* Add margin below the section header */
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4a46d2; /* Adjusted link color */
+            font-size: 18px;
+        }
+
+        .vein {
+            width: 2px; /* Width of the veins */
+            background-color: #0d0e0d; /* Dark green color for the veins */
+            position: absolute;
+        }
+
+        
+        .container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+  }
+
+  
+        .sentence-1 {
+            position: absolute;
+            top: 20%;
+            left: 80%;
+            transform: translate(-50%, -50%);
+            color: #000; /* Adjust text color */
+        }
+
+        .sentence-2 {
+            position: absolute;
+            top: 12%;
+            left: 86%;
+            transform: translate(-50%, -50%);
+            color: #000; /* Adjust text color */
+        }
+        .sentence-3 {
+            position: absolute;
+            top: 20%;
+            left: 80%;
+            transform: translate(-50%, -50%);
+            color: #000; /* Adjust text color */
+        }
+
+        .sentence-4 {
+            position: absolute;
+            top: 30%;
+            left: 16%;
+            transform: translate(-50%, -50%);
+            color: #000; /* Adjust text color */
+        }
+        #highlightedSection {
+            background-color: yellow;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="vein main-vein1 hidden"></div>
+            <div class="vein branch-1 hidden"></div>
+            <div class="vein branch-2 hidden"></div>
+        <div class="vein main-vein2 hidden"></div>
+            <div class="vein branch-3 hidden"></div>
+    <div class="hex-container">
+        <div class="hexagon">
+            <div class="section-header" style="background-color: #f6b9a4;">TROUBLESHOOTING</div> 
+           
+            <p>SGT Tool should be used for GEN 5</p>
+            <a href="https://confluence.avl.com/its/display/WANDEV/TCP+Client" target="_blank">Document</a>
+            <br> <br> <br>
+            
+
+        </div>
+        
+
+        
+        <div class="hexagon">
+            
+            
+            <div class="section-header" style="background-color:#ffcc00;">WAREHOUSE TOOLS</div> 
+                <a href="Materialentnahmeschein.pdf" target="_blank">Request form</a>
+                <p>Email to: <a href="mailto:logistik-wangen@avl.com" target="_blank">logistik-wangen</a></p>
+                Collect: <a href="J:\06_Instructions_and_Documentation\Ibn-Fläche\Gebäudepläne" target="_blank">Gebäudepläne</a>
+                <br>
+                <br>
+            
+        </div>
+
+        <div class="hexagon">
+            <div class="section-header" style="background-color: #ff9999;">CONTACT</div> <br> 
+            <a href="mailto:Philipp.Dorbath@avl.com">Philipp Dorbath</a>Application Engineer <br> <br>
+            <a href="mailto:jean.munch@avl.com">Jean Munch</a>Application Engineer <br> <br> <br>
+             
+        </div>
+        </div>
+
+
+        
+</body>
+</html>

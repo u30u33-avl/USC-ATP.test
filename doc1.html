@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            background-color: #f0f0f0; /* Background color */
+        }
+
+        .hex-container {
+            width: 150%; /* Adjust the size of the hexagonal container */
+            max-width: 1000px; /* Maximum width to maintain aspect ratio */
+            height: 99%; /* Maintain the same aspect ratio */
+            position: relative;
+        }
+
+        .hexagon {
+            width: 240px;
+            height: 260px; /* Approximate height for a regular hexagon */
+            background: linear-gradient(145deg, #ffffff 15%, #acf2b4 25%); /* Glossy gradient background */
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            position: absolute;
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5); /* Added shadow for a professional look */
+            text-align: center; /* Center text horizontally */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center text vertically */
+            padding: 20px; /* Add some padding to the hexagon */
+            
+        }
+
+        .hex-container .hexagon:nth-child(1) {
+            top: 68%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Center the hexagon */
+            
+        }
+
+        .hex-container .hexagon:nth-child(2) {
+            top: 30%;
+            left: 65%;
+            background: linear-gradient(145deg, #ffffff 15%, #fda5bb  25%); /* Glossy gradient background */
+            transform: translate(-50%, -50%); /* Center the hexagon */
+        }
+
+        .hex-container .hexagon:nth-child(3) {
+            top: 30%;
+            left: 35%;
+            background: linear-gradient(145deg, #ffffff 15%, #cca7f9 25%); /* Glossy gradient background */
+            transform: translate(-50%, -50%); /* Center the hexagon */
+        }
+
+        
+
+        .section-header {
+            font-size: 18px; /* Adjust font size */
+            margin-bottom: 10px; /* Add margin below the section header */
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4a46d2; /* Adjusted link color */
+            font-size: 18px;
+        }
+
+        .vein {
+            width: 2px; /* Width of the veins */
+            background-color: #0d0e0d; /* Dark green color for the veins */
+            position: absolute;
+        }
+
+        
+        .container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+  }
+
+  
+        .sentence-1 {
+            position: absolute;
+            top: 20%;
+            left: 80%;
+            transform: translate(-50%, -50%);
+            color: #000; /* Adjust text color */
+        }
+
+        .sentence-2 {
+            position: absolute;
+            top: 12%;
+            left: 86%;
+            transform: translate(-50%, -50%);
+            color: #000; /* Adjust text color */
+        }
+        .sentence-3 {
+            position: absolute;
+            top: 20%;
+            left: 80%;
+            transform: translate(-50%, -50%);
+            color: #000; /* Adjust text color */
+        }
+
+        .sentence-4 {
+            position: absolute;
+            top: 30%;
+            left: 16%;
+            transform: translate(-50%, -50%);
+            color: #000; /* Adjust text color */
+        }
+        #highlightedSection {
+            background-color: yellow;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="vein main-vein1 hidden"></div>
+            <div class="vein branch-1 hidden"></div>
+            <div class="vein branch-2 hidden"></div>
+        <div class="vein main-vein2 hidden"></div>
+            <div class="vein branch-3 hidden"></div>
+    <div class="hex-container">
+        <div class="hexagon">
+            <div class="section-header" style="background-color: #ff9999;">ATP/CALIBRATION</div> <br> 
+            
+            <a href="https://desktop.avl.com/group/set/01/02/05/Pages/Home_german.aspx?RootFolder=%2Fgroup%2Fset%2F01%2F02%2F05%2FDOCUMENTS%2FATP%5FATR%20GEN%205%20DRAFT&FolderCTID=0x01200043ADFEF6136B4E4ABACC2D4E1D4FFC26&View=%7B0E3CC382%2DBD8A%2D4D0A%2DB847%2DF62912D2F207%7D" target="_blank">ATP Inhouse</a>
+            <a href="https://dewansw1012.avl01.avlcorp.lan/RPSNext/app/SP/documents.documentssearch" target="_blank">RPS Document search</a>
+            <a href="https://dewansw1012.avl01.avlcorp.lan/RPSNext/app/SP/warehouse.article/detail/f8a2b29f-3a97-4cfc-abbd-0d5748689273" target="_blank">Ware-house article</a>
+            <a href="https://desktop.avl.com/group/set/01/08/DOCUMENTS/Forms/AllItems.aspx#InplviewHashc45b68da-f6fc-4500-b2dd-dc061f326353=FilterField1%3DDepartment%255Fx0020%255Fconcerned-FilterValue1%3DApplication%2520and%2520Customer%2520Support" target="_blank">Documents</a>
+            <br> 
+            <br> 
+            <br>
+            
+            
+
+        </div>
+        
+
+        
+        <div class="hexagon">
+            
+            
+            <div class="section-header" style="background-color:#ffcc00;">SOFTWARE</div> <br> 
+            <a href="file:///C:/SVN_release/trunk/07_GEN5_Inverter_Testsystem/CCU-PAC_7129BGR0000" target="_blank">CCU-PAC R10218</a>
+            <a href="file:///C:/Users/u30u33/Documents/New folder.AU5884E_SG3_Commissioning_and_Maintenance_Manual.pdf (2)" target="_blank">CCU-PAC R10218</a>
+            <a href="C:\SVN_release\trunk\06_GEN5_Components\IDC_7066BGR0000A04\IDC_A04_5R1.1.1_r2602" target="_blank">IDC R2602</a>
+            <a href="C:\SVN_release\trunk\06_GEN5_Components\CMU_7097BGR0000A03\CMU_A03_5R1.1.0_r2316" target="_blank">CMU R2316</a>
+            <div class="line"></div>
+            <br> 
+            <br> 
+            <br>
+        </div>
+
+        <div class="hexagon">
+            <div class="section-header" style="background-color: #ee9d89;">VDP/MOP</div> <br> <br> 
+            <p><a href="https://dewansw1012.avl01.avlcorp.lan/RPSNext/app/SP/warehouse.article" target="_blank">SCHEMATICS</a></p>
+            <br> 
+            <br>
+            <br>
+        </div>
+
+
+        
+</body>
+</html>
