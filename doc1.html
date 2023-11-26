@@ -121,6 +121,18 @@
         #highlightedSection {
             background-color: yellow;
         }
+        .back-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #4abad0;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 8px;
+    z-index: 9999;
+}
         
     </style>
 </head>
@@ -153,10 +165,11 @@
             
             
             <div class="section-header" style="background-color:#ffcc00;">SOFTWARE</div> <br> 
-            <a href="file:///C:/SVN_release/trunk/07_GEN5_Inverter_Testsystem/CCU-PAC_7129BGR0000" target="_blank">CCU-PAC R10218</a>
-            <a href="file:///C:/Users/u30u33/Documents/New folder.AU5884E_SG3_Commissioning_and_Maintenance_Manual.pdf (2)" target="_blank">CCU-PAC R10218</a>
-            <a href="C:\SVN_release\trunk\06_GEN5_Components\IDC_7066BGR0000A04\IDC_A04_5R1.1.1_r2602" target="_blank">IDC R2602</a>
-            <a href="C:\SVN_release\trunk\06_GEN5_Components\CMU_7097BGR0000A03\CMU_A03_5R1.1.0_r2316" target="_blank">CMU R2316</a>
+            
+            <a href="https://vcs-set.avl01.avlcorp.lan/scm/repo/AVL-SET/SW-Release/trunk/07_GEN5_Inverter_Testsystem/CCU-PAC_7129BGR0000" target="_blank">CCU-PAC R10218</a>
+            <a href="https://vcs-set.avl01.avlcorp.lan/scm/repo/AVL-SET/SW-Release/trunk/06_GEN5_Components" target="_blank">IDC R2602</a>
+            <a href="https://vcs-set.avl01.avlcorp.lan/scm/repo/AVL-SET/SW-Release/trunk/06_GEN5_Components" target="_blank">CMU R2316</a>
+            <a href="https://vcs-set.avl01.avlcorp.lan/scm/repo/AVL-SET/SW-Release/trunk/06_GEN5_Components" target="_blank">PAU</a>
             <div class="line"></div>
             <br> 
             <br> 
@@ -171,7 +184,16 @@
             <br>
         </div>
 
-
+    </head>
+    <a href="#" class="back-button">
+        <button onclick="goBack()"> Back</button></a>
+    
+        
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+        </script>
         
 </body>
 </html>
