@@ -121,6 +121,18 @@
         #highlightedSection {
             background-color: yellow;
         }
+        .back-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #4abad0;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 8px;
+    z-index: 9999;
+}
         
     </style>
 </head>
@@ -136,7 +148,9 @@
             <div class="section-header" style="background-color: #f6b9a4;">TROUBLESHOOTING</div> 
            
             <p>SGT Tool should be used for GEN 5</p>
-            <a href="https://confluence.avl.com/its/display/WANDEV/TCP+Client" target="_blank">Document</a>
+            <a href="https://confluence.avl.com/its/display/WANDEV/TCP+Client" target="_blank">Document 1</a>
+            <a href="https://confluence.avl.com/its/display/WANDEV/EME+Failure+Database+ACS" target="_blank">Document 2</a>
+            
             <br> <br> <br>
             
 
@@ -147,10 +161,10 @@
         <div class="hexagon">
             
             
-            <div class="section-header" style="background-color:#ffcc00;">WAREHOUSE TOOLS</div> 
-                <a href="Materialentnahmeschein.pdf" target="_blank">Request form</a>
+            <div class="section-header" style="background-color:#ffcc00;">WAREHOUSE Material</div> 
+                <a href="Materialentnahmeschein 1.docx" target="_blank">Request form</a>
                 <p>Email to: <a href="mailto:logistik-wangen@avl.com" target="_blank">logistik-wangen</a></p>
-                Collect: <a href="https://raw.githubusercontent.com/u30u33-avl/PAC-ATP.test/main/Gebäudepläne.png" target="_blank">Gebäudepläne</a>
+                Collect:   <a href="https://raw.githubusercontent.com/u30u33-avl/PAC-ATP.test/main/Gebäudepläne.png" target="_blank">Gebäudepläne</a>
                 <br>
                 <br>
             
@@ -163,7 +177,16 @@
              
         </div>
         </div>
-
+    </head>
+    <a href="#" class="back-button">
+        <button onclick="goBack()"> Back</button></a>
+    
+        
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+        </script>
 
         
 </body>
